@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F9FAFB"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Sensor"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- CardView background for the form -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Location label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="#222222"
+                android:textSize="16sp"/>
+
+            <!-- Location input -->
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Enter sensor location"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#222222"
+                android:textColorHint="#AAAAAA"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Sensor Type label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sensor Type"
+                android:textColor="#222222"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Sensor type dropdown (Spinner) -->
+            <Spinner
+                android:id="@+id/spinnerSensorType"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_edit_text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Add Sensor button -->
+            <Button
+                android:id="@+id/btnAddSensor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Add Sensor"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:backgroundTint="#167CFF"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

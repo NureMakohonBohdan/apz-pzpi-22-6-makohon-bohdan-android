@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IoT Monitoring System</string>
+
+    <string-array name="sensor_types">
+        <item>TEMPERATURE</item>
+        <item>HUMIDITY</item>
+        <item>PRESSURE</item>
+        <item>LIGHT</item>
+        <!-- Add more as needed -->
+    </string-array>
+
+</resources>
